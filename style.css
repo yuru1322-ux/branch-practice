@@ -1,0 +1,45 @@
+.header {
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 54px;
+  height: 64px;
+}
+.header__logo {
+  font-size: 36px;
+}
+.header__menu {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.fv {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  gap: 48px;
+  color: #808080;
+}
+.fv__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+}
+.fv__copy h1 {
+  font-size: 48px;
+}
+.fv__copy h2 {
+  font-size: 28px;
+}
+.fv__visual {
+  background-color: #d9d9d9;
+  height: 300px;
+  width: 45%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}/*# sourceMappingURL=style.css.map */

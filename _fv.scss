@@ -1,0 +1,25 @@
+.fv {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  gap: 48px;
+  color: #808080;
+  &__copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    & h1 {
+      font-size: 48px;
+    }
+    & h2 {
+      font-size: 28px;
+    }
+  }
+
+  &__visual {
+    background-color: #d9d9d9;
+    height: 300px;
+    width: 45%;
+  }
+}
