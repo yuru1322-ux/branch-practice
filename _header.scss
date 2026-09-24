@@ -1,0 +1,16 @@
+.header {
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 54px;
+  height: 64px;
+  &__logo {
+    font-size: 36px;
+  }
+  &__menu {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
