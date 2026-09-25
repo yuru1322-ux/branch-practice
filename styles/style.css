@@ -43,4 +43,45 @@ body {
   height: 300px;
   width: 45%;
 }
-/*# sourceMappingURL=style.css.map */
+
+.profile {
+  text-align: center;
+  color: #808080;
+}
+.profile__copy {
+  margin-top: 40px;
+}
+.profile__copy h2 {
+  font-size: 28px;
+}
+.profile__copy p {
+  font-size: 16px;
+  margin-top: 15px;
+}
+.profile__cards {
+  display: flex;
+  justify-content: center;
+  height: 185px;
+  gap: 30px;
+}
+.profile__card {
+  display: flex;
+  padding: 10px;
+  border: 1px solid;
+  gap: 8px;
+  width: 420px;
+  align-items: center;
+  margin-top: 40px;
+}
+.profile__visual {
+  background-color: #808080;
+  width: 200px;
+  height: 100%;
+}
+.profile__text {
+  text-align: left;
+  font-size: 13px;
+}
+.profile__text ul {
+  margin: 8px 0 0 13px;
+}/*# sourceMappingURL=style.css.map */
