@@ -1,0 +1,5 @@
+// 呼び出しは common が最初かもです！
+// 共通として common があり上書きしても良い物として扱えるようにした方が自由度が高いです！
+@use 'common/common';
+@use 'common/header';
+@use 'parts/fv';
