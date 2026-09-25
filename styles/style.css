@@ -59,13 +59,13 @@ body {
   text-align: center;
   color: #808080;
 }
-.profile__copy {
+.profile .section__copy {
   margin-top: 40px;
 }
-.profile__copy h2 {
+.profile .section__copy h2 {
   font-size: 28px;
 }
-.profile__copy p {
+.profile .section__copy p {
   font-size: 16px;
   margin-top: 15px;
 }
