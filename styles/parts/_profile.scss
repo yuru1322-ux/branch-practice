@@ -1,0 +1,41 @@
+.profile {
+  text-align: center;
+  color: #808080;
+  &__copy {
+    margin-top: 40px;
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  }
+  &__cards {
+    display: flex;
+    justify-content: center;
+    height: 185px;
+    gap: 30px;
+  }
+  &__card {
+    display: flex;
+    padding: 10px;
+    border: 1px solid;
+    gap: 8px;
+    width: 420px;
+    align-items: center;
+    margin-top: 40px;
+  }
+  &__visual {
+    background-color: #808080;
+    width: 200px;
+    height: 100%;
+  }
+  &__text {
+    text-align: left;
+    font-size: 13px;
+    & ul{
+      margin: 8px 0 0 13px;
+    }
+  }
+}
