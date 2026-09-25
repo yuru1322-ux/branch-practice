@@ -2,6 +2,10 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+.flex {
+  display: flex;
+}
+
 .header {
   background-color: #eaeaea;
   display: flex;
@@ -17,6 +21,13 @@ body {
 .header__menu {
   font-size: 24px;
   font-weight: bold;
+}
+.header__menu .nav-ttl {
+  list-style: none;
+  margin-left: 20px;
+}
+.header__menu .nav-ttl a {
+  text-decoration: none;
 }
 
 .fv {
@@ -84,4 +95,5 @@ body {
 }
 .profile__text ul {
   margin: 8px 0 0 13px;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
