@@ -1,7 +1,7 @@
 .profile {
   text-align: center;
   color: #808080;
-  &__copy {
+  .section__copy {
     margin-top: 40px;
     h2 {
       font-size: 28px;
@@ -34,7 +34,7 @@
   &__text {
     text-align: left;
     font-size: 13px;
-    & ul{
+    & ul {
       margin: 8px 0 0 13px;
     }
   }
