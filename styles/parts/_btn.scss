@@ -1,0 +1,143 @@
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+  margin-block: 8rem;
+  & button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+    background:
+      linear-gradient(180deg, #ffbd00 0%, #ffab00 45%, #ff7800 100%) padding-box,
+      linear-gradient(120deg, #ffbd00, #ff7800) border-box;
+    padding-inline: 30px;
+    padding-block: 30px;
+    color: #fff;
+    text-shadow:
+      0 0 3px #ff6a00,
+      0 0 8px #ff6a00,
+      0 0 14px rgba(255, 80, 0, 0.8);
+    font-weight: 700;
+    font-size: 36px;
+    border-radius: 55px;
+    border: 10px solid transparent;
+    outline: 4px solid #fff0c8;
+    outline-offset: -7px;
+    & span {
+      font-size: 24px;
+    }
+  }
+  &-shine {
+    position: relative;
+    overflow: hidden;
+  }
+  &-shine::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -75%;
+    width: 40%;
+    height: 200%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.9),
+      transparent
+    );
+    transform: rotate(25deg);
+    animation: button-shine 3s ease-in-out infinite;
+    pointer-events: none;
+    @keyframes button-shine {
+      0% {
+        left: -75%;
+      }
+
+      30% {
+        left: 135%;
+      }
+
+      100% {
+        left: 135%;
+      }
+    }
+  }
+
+  &-pulse {
+    animation: button-pulse 2s ease-in-out infinite;
+    @keyframes button-pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      30% {
+        transform: scale(1.05);
+      }
+      70% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+  &-glow {
+    background: linear-gradient(135deg, #ff9b35, #ff6500);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 18px 48px;
+    font-weight: bold;
+
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  @keyframes glow {
+    0%,
+    100% {
+      box-shadow:
+        0 0 8px rgba(255, 115, 0, 0.4),
+        0 0 20px rgba(255, 115, 0, 0.2);
+    }
+
+    50% {
+      box-shadow:
+        0 0 16px rgba(255, 115, 0, 0.8),
+        0 0 40px rgba(255, 115, 0, 0.5);
+    }
+  }
+  &-ring {
+    position: relative;
+    isolation: isolate;
+    background: #ff7800;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 18px 48px;
+    font-weight: bold;
+  }
+
+  &-ring::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid #ff7800;
+    border-radius: inherit;
+    z-index: -1;
+
+    animation: ring 2s ease-out infinite;
+  }
+
+  @keyframes ring {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+
+    100% {
+      transform: scale(1.25, 1.6);
+      opacity: 0;
+    }
+  }
+}
